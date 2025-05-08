@@ -1,0 +1,155 @@
+%-------------------------
+% Resume in Latex
+% Author : Guilherme Nascimento
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------CABEÇALHO-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://vilih.com/}{\Large Guilherme Nascimento}} & Email: \href{mailto:gnlnascimento@gmail.com}{gnlnascimento@gmail.com} \\
+  \href{http://vilih.com/}{www.vilih.com} & Celular: +55 21 98180-4006 \\
+\end{tabular*}
+
+%-----------EDUCAÇÃO-----------------
+\section{Educação}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Universidade Estácio de Sá}{Rio de Janeiro, Brasil}
+    {Bacharelado em Ciência da Computação}{2023 -- 2026}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIÊNCIA-----------------
+\section{Experiência}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {DBC Company}{Remoto}
+    {Engenheiro de Software}{Atual}
+    \resumeItemListStart
+      \resumeItem{Sistemas Otimizados}
+        {Desenvolvimento de sistemas eficientes utilizando .NET, Dapper e React, aumentando a eficiência dos fluxos de trabalho em 70\%, reduzindo o tempo de execução de tarefas de 8–6 horas para 1–2 horas. Modernização de serviços backend migrando de .NET 6 para .NET 8 e de React 16 para React 18, melhorando performance e escalabilidade.}
+      \resumeItem{Arquitetura Micro-Frontend}
+        {Liderança no desenvolvimento de micro-frontends com React e TypeScript, aumentando a modularidade do sistema e a autonomia das equipes.}
+      \resumeItem{Framework de Testes}
+        {Criação de testes automatizados com xUnit (backend) e Playwright (frontend), garantindo estabilidade do código e alta cobertura de testes.}
+      \resumeItem{Infraestrutura DevOps}
+        {Gestão e integração de pipelines CI/CD para micro-frontends e APIs REST usando Azure DevOps. Utilização de ferramentas como Kibana e dashboards do Kubernetes para monitoramento de métricas e logs.}
+      \resumeItem{Desenvolvimento Backend}
+        {Desenvolvimento e manutenção de APIs RESTful com ASP.NET Core 6/8, seguindo padrões arquiteturais como Clean Architecture e Vertical Slice Architecture.}
+      \resumeItem{Ferramenta de Comandos SQL}
+        {Desenvolvimento de aplicação interna para busca e execução de comandos SQL integrada com Dapper, padronizando a escrita e execução de queries.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {DBC Company}{Remoto}
+    {Estagiário em Desenvolvimento Frontend}{jan. 2023 -- abr. 2023}
+    \resumeItemListStart
+      \resumeItem{Portal de Recrutamento}
+        {Desenvolvimento de novo fluxo para o portal de candidatos utilizando React, TypeScript e RTK Query, melhorando a comunicação com candidatos. O sistema suportava mais de 1.000 inscrições por período.}
+      \resumeItem{Sistema de Integração}
+        {Otimização de fluxos de inscrição e comunicação via integração com e-mails e Google Forms, melhorando a experiência dos candidatos e a eficiência na coleta de dados.}
+      \resumeItem{Implementação de Testes}
+        {Implementação de testes de frontend com React Testing Library e Vitest, garantindo confiabilidade e funcionalidade da aplicação.}
+      \resumeItem{Design Web Responsivo}
+        {Desenvolvimento e manutenção de aplicações web responsivas com React e TypeScript, utilizando Redux Toolkit e Context API para gerenciamento de estado.}
+      \resumeItem{Melhoria de UI/UX}
+        {Aplicação de boas práticas de UI/UX para criação de interfaces intuitivas, aprimorando a experiência do usuário com foco em layout, navegação e interações.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJETOS-----------------
+\section{Projetos}
+\resumeSubHeadingListStart
+  \resumeSubItem{Vili's Vault Blog \href{http://vilih.com/}{(vilih.com)}}
+    {Blog técnico pessoal desenvolvido com Astro e TypeScript, com conversão de Markdown para HTML. Publicações regulares sobre tecnologias emergentes, tópicos profissionais e projetos pessoais.}
+  \resumeSubItem{Convert Ease \href{https://convert-ease-sigma.vercel.app/}{(convert-ease-sigma.vercel.app)}}
+    {Aplicação web de alto desempenho para conversão de mídia, construída com Next.js 14, TypeScript e Zustand. Utiliza FFMPEG WASM para processamento no cliente e Tailwind CSS para a interface.}
+\resumeSubHeadingListEnd
+
+%--------HABILIDADES DE PROGRAMAÇÃO------------
+\section{Habilidades de Programação}
+\resumeSubHeadingListStart
+  \item{
+    \textbf{Linguagens:} C\#, TypeScript, JavaScript, SQL
+  }
+  \item{
+    \textbf{Frameworks e Bibliotecas:} ASP.NET Core, Entity Framework Core, React, Redux Toolkit, Tanstack Query, xUnit, Playwright, Vitest
+  }
+  \item{
+    \textbf{Ferramentas e Plataformas:} Docker, Azure DevOps, CI/CD Pipelines, Kubernetes, Kibana, Git
+  }
+  \item{
+    \textbf{Bancos de Dados e ORMs:} SQL Server, Dapper, Entity Framework Core
+  }
+\resumeSubHeadingListEnd
+
+\end{document}
